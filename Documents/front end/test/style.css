@@ -1,0 +1,383 @@
+
+:root {
+    --ff-pop: 'Poppins', sans-serif;
+    --ff-ox: 'Oxygen', sans-serif;
+   
+    --fw-normal: 500;
+    --fw-bold: 700;
+    
+
+    --fs-small: 16px;
+    --fs-regular: 24px;
+    --fs-medium: 36px;
+    --fs-large: 128px;
+
+    
+    --clr-neutral: white;
+    --clr-green: #66DD8D;
+    --clr-gradient:linear-gradient(to left,#315BEF,#66DD8D);
+    --clr-blue: #315BEF;
+    --clr-darkblue: #081D31;
+    --clr-background-blue: #112B45;
+}
+
+
+body {
+    background-color:  var(--clr-background-blue);
+    color: var(--clr-neutral);
+    margin: 0;
+    font-family: var(--ff-ox);
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-small);
+           
+}
+
+h1 {
+    font-family: var(--ff-pop);
+    font-size: var(--fs-large);
+    margin: 0;
+    letter-spacing: -0.5rem;
+}
+
+h2{
+    font-family: var(--ff-pop);
+    font-size: 64px;
+    font-weight: bold;
+   letter-spacing: -3px;
+   line-height: 90%;
+   width: 100%;
+}
+
+h3{
+    font-family: var(--ff-pop);
+    font-size: var(--fs-medium);
+    margin-bottom: 20px;
+}
+
+h4{
+    font-family: var(--ff-pop);
+    font-size: var(--fs-regular);  
+}
+
+.p {
+    font-family: var(--ff-ox);
+    font-size: var(--fs-small);    
+}
+
+
+ol {
+list-style-image: url(images/iconos/check_icon.svg) ;
+margin-bottom: 30px;
+}
+
+
+button {
+
+    background-color: var(--clr-blue);
+    border-radius: 50px;
+    border: 0;
+    color: var(--clr-neutral);
+    padding: 16px 32px 16px 32px;
+}
+
+main{
+    background-image: url(images/imagen_fondo_ppal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+    
+}
+
+.main-container { 
+    display: block ;
+    align-content: center;
+    padding: 10% 20% 10% 10%;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.nav-list a {
+    display: inline-block;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+
+/*  Basic marketing information  */
+
+.highlight {
+    color:#66DD8D ;
+}
+
+  .marketing-content {
+    width: auto;
+    padding: 5%;
+    position: relative;
+    top: -150px;
+    }
+
+.marketing-content h2 {
+  z-index: 3;
+  position: relative;
+}
+
+
+  .lineas_marketing {
+    position: relative;
+    top: -580px;
+    left: 40%;
+    z-index: 1;
+    
+  }
+  
+  .about {
+    padding: 5% 10% 5% 10%;
+   margin: auto;
+  }
+
+  .image-banner {
+    border-radius: 200px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .marketing-content p {
+    max-width: 40%;
+  }
+
+  .about-content {
+    background-color: green;
+   
+  }
+
+
+  /*  Services  */
+
+.services {
+  padding: 5% 10% 5% 10%;
+}  
+
+.container {
+    width: 
+    
+}
+
+  .cards {
+    display: flex;
+    gap: 10px;
+}
+
+  .card {
+    
+    border-radius: 24px;
+    background-color: rgb(25, 63, 102, 0.4);
+    padding: 24px;
+    width: 30%;
+   
+    
+  }
+
+ .card button {
+  width: 100%;
+ }
+
+
+  
+/*  Founder */
+
+.founder {
+  
+  padding: 5% 10% 10% 5%;
+}
+  .container-founder {
+    margin: 70px;
+    border: 2px solid red;
+    display: flex;
+    
+  }
+
+  .foto-founder {
+    width: 500px;
+    height: 419px;
+    border-radius: 24px;
+  }
+
+  .contacts {
+   background-image: url(images/clouds.png);
+   background-repeat: no-repeat;
+   display: flex;
+  }
+  
+
+/*  Contacts */
+
+.formulario input::placeholder {
+color: white;
+}
+
+.contacts{
+  padding: 5% 10% 10% 5%; 
+}
+
+.formulario {
+    background-color: rgba(147, 147, 147, 0.136);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   /* width: 400px;*/
+  }
+
+  .formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .formulario .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .formulario input[type="text"],
+  .formulario input[type="email"],
+  .formulario input[type="tel"],
+  .formulario input[type="date"] {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: var(--fs-small);
+    padding: 5px 0;
+    transition: border-color 0.3s ease;
+    background-color: transparent;
+    color: white;
+    
+  }
+
+
+
+  .formulario label:not(#label_help) {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+
+  .formulario input:focus + label,
+  .formulario input:not(:placeholder-shown) + label:not(#checkbox_label) {
+    top: -20px;
+    font-size: 12px;
+    color: #fff;
+  }
+
+
+
+  .formulario .agreement {
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .formulario .checkbox-field {
+    margin-right: 10px;
+  }
+
+  
+
+  .formulario button:hover {
+    background-color: #0056b3;
+  }
+
+  #time::placeholder {
+    color: transparent;
+  }
+  
+  #time:not(:focus):invalid {
+    color: transparent; /* Hace que el texto del formato predeterminado sea invisible */
+  }
+  
+  #time {
+    color: green; /* El color del texto cuando se ingresa un valor */
+}
+
+#time::-webkit-calendar-picker-indicator{filter: invert(1);}
+
+.checkbox-container{
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid green;
+  background-color: transparent; 
+  cursor: pointer;
+  border-radius: 3px;
+  z-index: 2;
+  position: absolute;
+  left: 4px;
+  top: 20px;
+}
+
+.checkbox-container input[type="checkbox"]:checked + label::before {
+  content: '✔'; /* Unicode checkmark */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: green; /* Green checkmark */
+  font-size: 8px;
+  text-align: center;
+  line-height: 9px; /* Center the checkmark */
+}
+
+
+.checkbox_div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+#myCheckbox{
+  opacity:0;
+}
+
+/*  Footer */
+
+footer{
+    background-color: var(--clr-darkblue);
+    background-image: url(images/symbol_x.png);
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.symbol-x {
+    text-align: center;
+}
+
+.footer-contacts {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
